@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="./is-palindrome.js"></script>
+    <title>É palíndromo?</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        #title{
+            color: #187bcd;
+        }
+        #phrase{
+            height: 30px;
+            border: 1px solid #187bcd;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        #check-palindrome{
+            height: 30px;
+            border: 1px solid #187bcd;
+            background-color: #187bcd;
+            border-radius: 5px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h3 id="title">Verifique se uma frase é palíndroma.</h3>
+    <input id="phrase" type="text">
+
+    <button id="check-palindrome" onclick="palindrome(document.getElementById('phrase').value)">
+        É palíndromo?
+    </button>
+</div>
+</body>
+</html>
